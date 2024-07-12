@@ -1,0 +1,51 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-color: aqua;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+#ig {
+    position-try: bottom;
+    height: 100px;
+    padding-top: 5px;
+    margin-right: 0px;
+}
+#yt {
+    border-radius: 40%;
+    height: 90px;
+    padding-right: 15px;
+    padding-bottom: 11px;
+    margin-right: 0px;
+}
+#X {
+    border-radius: 50%;
+    background-position-x: right;
+    height: 40px;
+    padding-bottom: 35px;
+}
+#drop1 {
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+body    
+{
+    background-color: black;
+    text-align: center;
+    height: 1px;
+    color: white;
+}
+footer 
+{
+    text-align: center;
+}
+p 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+#color {
+    height: 1px;
+    background-color: white;
+    font-size: 1px;
+}
