@@ -49,8 +49,8 @@
     Here is the Drop down box.
         </p>
         
-    <select name="projects" size="1" id="drop1">
-        <option value="TTS">Discord TTS command</option>
+    <select name="projects" size="1" id="drop1" onchange="redirectToPage()">
+        <option value="">Select An Option</option>
         <option value="https://mylifeaschaitanya.site/tic-tac-toe/index.html">tic-tac-toe</option>
         <option value="https://mylifeaschaitanya.site/rock-paper-scissors/index.html">rock-paper-scissors</option>
         </select>
@@ -59,7 +59,17 @@
     </section>
 
 </body>
+<script>
+    function redirectToPage() {
+      var select = document.getElementById("drop1");
+      var selectedValue = select.value;
 
+      // Check if an option other than the default is selected
+      if (selectedValue) {
+        window.location.href = selectedValue; // Redirect to the selected value (URL)
+      }
+    }
+  </script>
 <hr>
 <footer>
 
@@ -69,4 +79,5 @@
 
 
 </footer>
+    
 </html>
