@@ -1,0 +1,80 @@
+body {
+    background-color: yellow;
+}
+.heading {
+    position: absolute;
+    top: 20px;
+    left: 35%;
+}
+#rock {
+    position: absolute;
+    top: 100px;
+    left: 30%;
+}
+.rock-image {
+    
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#paper {
+    position: absolute;
+    top: 100px;
+    left: 45%;
+}
+.paper-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#scissors {
+    position: absolute;
+    top: 100px;
+    left: 60%;
+}
+.scissors-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#rock:hover {
+    border: 3px solid red;
+    opacity: 80%;
+    border-radius: 50%;
+}
+#paper:hover {
+    border: 3px solid red;
+    opacity: 80%;
+    border-radius: 50%;
+}
+#scissors:hover {
+    border: 3px solid red;
+    opacity: 80%;
+    border-radius: 50%;
+}
+.score-board {
+    position: absolute;
+    display: black;
+    width: 300px;
+    top: 40%;
+    left: 46%;
+    font-size: larger;
+    font-weight: bold;
+}
+.player-score {
+    font-size: 100px;
+}
+.computer-score {
+    font-size: 100px;
+}
+.status {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+.status-text {
+    font-size: 40px;
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+}

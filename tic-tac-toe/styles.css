@@ -1,0 +1,179 @@
+.heading {
+position: absolute;
+top: 30px;
+left: 42%;
+}
+.reset {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 92%;
+    left: 43%;
+}
+.reset-button-light {
+    position: absolute;
+    background-color: white;
+    height: 40px;
+    width: 150px;
+    color: black;
+    border: 2px solid black;
+    font-size: 35px;
+}
+.reset-button-dark {
+    position: absolute;
+    background-color: black;
+    height: 40px;
+    width: 150px;
+    color: white;
+    border: 2px solid white;
+    font-size: 35px;
+}
+.theme {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    height: 30px;
+    width: 100px;
+}
+.switch-light {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+}
+.switch-dark {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+}
+.light-mode {
+    position: absolute;
+    left: 0px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px double black;
+}
+.light-mode-click {
+    animation: light-dark 1s ease-in;
+}
+.dark-mode {
+    position: absolute;
+    right: 0px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px double white;
+}
+.dark-mode-click {
+    animation: dark-light 1s ease-in;
+}
+.heading-text-light {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #03045e;
+}
+.heading-text-dark {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #212529;
+}
+.game-light {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 110px;
+    left: 30%;
+    height: 500px;
+    width: 500px;
+    border-radius: 20%;
+    background-image: linear-gradient(to bottom, #023e8a, #0077b6, #0096c7, #00b4d8, #48cae4);
+}
+.game-dark {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 110px;
+    left: 30%;
+    height: 500px;
+    width: 500px;
+    border-radius: 20%;
+    background-image: linear-gradient(to bottom, #343a40, #495057, #6c757d, #adb5bd, #ced4da);
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.boxes-light {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 120px;
+    left: 10%;
+    top: 4%;
+    border-radius: 20%;
+    height: 120px;
+    width: 120px;
+    color: black;
+    background-color: white;
+}
+.boxes-dark {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 120px;
+    left: 10%;
+    top: 4%;
+    border-radius: 20%;
+    height: 120px;
+    width: 120px;
+    color: white;
+    background-color: black;
+}
+@keyframes light-dark {
+    0%{
+       left: 0px;
+    }
+    100% {
+        left: 55px;
+    }
+}
+@keyframes dark-light {
+    0%{
+        left: 55px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+@keyframes drop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.boxes {
+    transition: all 0.5s ease;
+}
+
+.drop-animation {
+    animation: drop 0.5s forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
