@@ -179,3 +179,8 @@ left: 42%;
 .fade-in {
     animation: fadeIn 0.5s ease-in-out forwards;
 }
+.disabled {
+    pointer-events: none;
+    opacity: 0.5; 
+}
+
