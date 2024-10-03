@@ -111,6 +111,7 @@ left: 42%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    user-select: none;
 }
 .boxes-light {
     position: relative;
